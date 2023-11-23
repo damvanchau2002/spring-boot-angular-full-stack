@@ -1,0 +1,32 @@
+<table class="table">
+    <thead>
+      <tr>
+      
+        <th scope="col">Địa danh</th>
+        <th scope="col">Độ sâu</th>
+        <th scope="col">Ngày khoan</th>
+        <th scope="col">Tên điểm khoan</th>
+        <th scope="col">Tên người khoan</th>
+        <th scope="col">Quản lý</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let employee of employees">
+       
+        <td>{{employee.diadanh}}</td>
+        <td>{{employee.dosau}}</td>
+        <td>{{employee.ngaykhoan}}</td>
+        <td>{{employee.tendiem}}</td>
+        <td>{{employee.tennguoikhoan}}</td>
+        <td>
+          <button (click) = "updateEmployee(employee.id)" class="btn btn-info">Cập nhật</button>
+          <button (click) = "deleteEmployee(employee.id)" class="btn btn-danger" style="margin-left:10px">Xóa</button>
+        </td>
+
+       
+      </tr>
+   
+  
+    </tbody>
+  </table>

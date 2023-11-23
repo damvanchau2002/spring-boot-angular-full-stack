@@ -1,0 +1,30 @@
+<h3>Cập nhật điểm khoan</h3>
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+        <label for="" >Địa danh</label>
+        <input type="text" class="form-control" id="diadanh"
+        [(ngModel)] = "employee.diadanh" name="diadanh">    
+    </div>
+    <div class="form-group">
+        <label for="" >Độ sâu</label>
+        <input type="text" class="form-control" id="dosau"
+        [(ngModel)] = "employee.dosau" name="dosau">    
+    </div>
+    <div class="form-group">
+        <label for="" >Ngày khoan</label>
+        <input type="text" class="form-control" id="ngaykhoan"
+        [(ngModel)] = "employee.ngaykhoan" name="ngaykhoan">    
+    </div>
+    <div class="form-group">
+        <label for="" >Tên điểm khoan</label>
+        <input type="text" class="form-control" id="tendiem"
+        [(ngModel)] = "employee.tendiem" name="tendiem">    
+    </div>
+    <div class="form-group">
+        <label for="" >Tên người khoan</label>
+        <input type="text" class="form-control" id="tennguoikhoan"
+        [(ngModel)] = "employee.tennguoikhoan" name="tennguoikhoan">    
+    </div>
+    <button class="btn btn-success" type="submit">Cập nhật</button>
+</form>
